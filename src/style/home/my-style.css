@@ -1,0 +1,100 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.imgmystyle {
+
+    transition: 0.5s;
+    transform: scale(1.00);
+
+}
+
+.imgmystyle:hover {
+
+    transition: 0.5s;
+    transform: scale(1.02);
+
+}
+
+.box-1 {
+    position: relative;
+    height: 300px;
+    background-color: #ff6347;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container-fluid .box-1 .icon {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.box-1:hover .icon {
+
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container-fluid .box-1 .icon .fa {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+
+}
+
+.container-fluid .box-1:hover .icon .fa {
+
+    font-size: 40px;
+
+}
+
+.container-fluid .box-1 .content {
+
+    position: absolute;
+    top: 100px;
+    height: calc(100%, -100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5;
+
+}
+
+.container-fluid .box-1 .content .fa {
+
+    font-size:60px;
+}
+
+.customDeco{
+
+ text-decoration: none;
+ color:rgb(39, 33, 33);  
+
+}
+
+.boxeffect {
+
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+

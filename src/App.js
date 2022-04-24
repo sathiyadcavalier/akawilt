@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Layout from './Pages/layout';
+import Home from './Pages/home';
+import Aboutme from "./Pages/aboutme"
+import Experiments from "../src/Pages/experiments";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import '@popperjs/core'; // Edit here
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="aboutme" element={<Aboutme />} />
+        <Route path="experiments" element={<Experiments />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
