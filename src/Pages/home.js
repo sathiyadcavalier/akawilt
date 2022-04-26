@@ -32,30 +32,31 @@ class Home extends React.Component {
         return (
 
             <>
+                <div className="home">
 
+                    {/*Header*/}
 
-                {/*Header*/}
-
-                <div className="container-fluid">
-                    <div className="row m-3">
-                        <div className="col-md-6 col-xs-12 boxeffect">
-                            <img src={headerimg} className="imgmystyle d-block w-100" alt="myImage" />
-                        </div>
-                        <div className="col-md-6 col-xs-12">
-                            <TypingEffect />
+                    <div className="container-fluid">
+                        <div className="row m-3">
+                            <div className="col-md-6 col-xs-12 boxeffect">
+                                <img src={headerimg} className="imgmystyle d-block w-100" alt="myImage" />
+                            </div>
+                            <div className="col-md-6 col-xs-12">
+                                <TypingEffect />
+                            </div>
                         </div>
                     </div>
+
+                    {/*Content*/}
+
+                    <div className="container-fluid">
+
+                        <Box />
+
+                    </div>
+
+                    <Footer />
                 </div>
-
-                {/*Content*/}
-
-                <div className="container-fluid">
-
-                    <Box />
-
-                </div>
-
-                <Footer />
 
             </>
         )

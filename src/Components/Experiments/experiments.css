@@ -1,45 +1,67 @@
-.parentContainerboxmodel {
+.boxModel-box {
 
-    background: skyblue;
-    padding: 10px;
-
+    min-height:400px;
+    background-color: blueviolet;
+      
 }
 
+.boxModel-box-1{
 
-.headingBoxmodel {
-
-    margin-top: 10px;
-
-}
-
-
-
-
-.flexArchitecture {
-
-    width: 700px;
-    height: 400px;
-
-}
-
-.mainBox {
-
-    width: 100%;
-    height: 350px;
-    background: lightgreen;
-    padding: 5px;
-   
-}
-
-.boxModel-1,
-.boxModel-2,
-.boxModel-3 {
-
-    height: 100px;
     width: 100px;
+    height: 100px;
     background: tomato;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 1px;
 
+}
+
+
+.boxModel-row{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.boxModel-column{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boxModel-justify-start{
+
+    justify-content: flex-start;
+
+}
+
+
+.boxModel-justify-center{
+
+    justify-content: center;
+
+}
+
+.boxModel-justify-end{
+
+    justify-content: flex-end;
+
+}
+
+.boxModel-align-start{
+
+    align-items: flex-start;
+
+}
+
+.boxModel-align-center{
+
+    align-items: center;
+
+}
+
+.boxModel-align-end{
+
+    align-items: flex-end;
 
 }
